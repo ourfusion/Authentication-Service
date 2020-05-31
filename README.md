@@ -58,19 +58,29 @@ The Authentication Service generates a SAML 2.0 authentication request, which is
 
 ### Step 1. A Guideline
 ![Step1](https://i.ibb.co/Rp6s9D8/Annotation-2020-06-01-022001.png)
+
 The process flow and activities are explained in a step by step approach guideline.
+
 ### Step 2. Selecting the IdP
 ![Step2](https://i.ibb.co/jZZXd2L/Annotation-2020-06-01-022120.png)
+
 After reviewing the sequence diagram that shows the process of authentication, you should select the Identity Provider. SSOCircle is the only IdP assigned to the current authentication service to test the project.
+
 ### Step 3. SSOCircle Credentials
 ![Step3](https://i.ibb.co/cLMpj0q/Annotation-2020-06-01-022202.png)
+
 Since we have selected SSOCircle as the Identity Provider in the previous step, the URL will be directed to SSOCircle website automatically. Here, you should provide your credentials. If you don't have and you are not going to register yourself in SSOCircle platform, you can use **rezakhv** as username and **reza3004** as password and then click press button.
+
 ### Step 4. Log-in to IdP
 ![Step4](https://i.ibb.co/yPwhgZN/Annotation-2020-06-01-022247.png)
+
 After successful log in to SSOCircle platform, by clicking on "Continue SAML Single Sign On", SSOCircle will send you to the SAML Service Provider (our authentication service).
+
 ### Step 5. 
 ![Step5](https://i.ibb.co/Z64QFzY/Annotation-2020-06-01-022336.png)
+
 After returning to the authentication service, it will show you that you have loged in to the system successfully and also show the email address that you have used to register on IdP (SSOCircle). Here you can log out from service provider platform or totally from both service provider and identity provider platforms.
+
 
 
 
