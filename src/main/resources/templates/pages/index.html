@@ -1,0 +1,55 @@
+<!doctype html>
+<html
+  lang="en"
+  xmlns:th="http://www.thymeleaf.org"
+  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="~{layout}"
+>
+
+<body>
+  <!-- Content starts -->
+  <section class="my-3 p-3 bg-white rounded box-shadow" layout:fragment="content">
+    <h6 class="border-bottom border-gray pb-2 mb-0">The authentication flow, step by step:</h6>
+    <div class="media text-muted pt-3">
+      <i class="fas fa-building fa-2x fa-fw mr-2 spring-green" data-fa-transform="shrink-4"></i>
+      <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <strong class="d-block text-gray-dark">Select your Identity Provider (IdP)</strong>
+        Select an IdP that has your authentication data. SSOCircle is used as an public IdP for this sample project.
+        We can either enable users to select an IdP (like what I did in this case)
+        or we can configure and force an automatic means of IdP discovery.
+      </p>
+    </div>
+    <div class="media text-muted pt-3">
+      <i class="fas fa-user-lock fa-2x fa-fw mr-2 spring-green" data-fa-transform="shrink-4"></i>
+      <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <strong class="d-block text-gray-dark">Authenticate against the selected IdP</strong>
+        This Authentication Service generates a SAML 2.0 authentication request, which is encoded and embedded into the URL for SSO
+        service. After redirecting, you (user) must provide your credentials to authenticate against the selected IdP.
+        So, please create an account in <a href="https://www.ssocircle.com/en/portfolio/publicidp/">SSOCircle</a> which is a very simple process or use my account <b>(username: rezakhv - password: reza3004)</b> to test the project.
+      </p>
+    </div>
+    <div class="media text-muted pt-3">
+      <i class="fas fa-user-tag fa-2x fa-fw mr-2 spring-green" data-fa-transform="shrink-4"></i>
+      <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <strong class="d-block text-gray-dark">Get back and see your login data</strong>
+        The IdP returns the encoded SAML response to the browser. You will get back to the Authentication Service.
+        If your identity is established by the IdP, you will be provided with app access and your profile data displayed in our Authentication Service.
+      </p>
+    </div>
+    <div class="media text-muted pt-3">
+      <i class="fas fa-door-closed fa-2x fa-fw mr-2 spring-green" data-fa-transform="shrink-4"></i>
+      <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+        <strong class="d-block text-gray-dark">Logout from your session</strong>
+        You can now logout from the app. If enabled, you can also invoke the Single Logout (SLO) that invalidates client application
+        sessions in addition to its own SSO session (IdP-side).
+      </p>
+    </div>
+    <small class="d-block text-right mt-3" id="sso-btn">
+      <a th:href="@{/saml/login}" class="btn btn-spring btn-sm">
+        <i class="fas fa-rocket"></i> Get started</a>
+    </small>
+  </section>
+  <!-- Content ends -->
+<body>
+  
+</html>
