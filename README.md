@@ -18,11 +18,11 @@ Using Docker, it is possible to run the project "as-is", simply.
 
 Run a pre-built fat-jar:
 ```docker
-docker run -it --rm -p 8080:8080 -t vdenotaris/spring-saml-sp:latest
+docker run -it --rm -p 8080:8080 -t ./spring-saml-sp:latest
 ```
 or compile the code and run the application with Maven:
 ```docker
-docker run -it --rm -p 8080:8080 -t vdenotaris/spring-saml-sp:2.3.1-mvn-jdk-8
+docker run -it --rm -p 8080:8080 -t ./spring-saml-sp:2.3.1-mvn-jdk-8
 ```
 If you’re using Docker natively on Linux, Docker for Mac, or Docker for Windows, then the web app should now be listening on port 8080 on your Docker daemon host. Point your web browser to http://localhost:8080 to find the starting page. Alternatively, you can also try http://127.0.0.1:8080/.
 
