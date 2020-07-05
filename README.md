@@ -26,9 +26,6 @@ docker run -it --rm -p 8080:8080 -t ./spring-saml-sp:2.3.1-mvn-jdk-8
 ```
 If you’re using Docker natively on Linux, Docker for Mac, or Docker for Windows, then the web app should now be listening on port 8080 on your Docker daemon host. Point your web browser to http://localhost:8080 to find the starting page. Alternatively, you can also try http://127.0.0.1:8080/.
 
-### Project Demo
-This project is deployed on **AWS EC2** and here is a link to check it out: [Click to Ckeck](http://authenticationservice-env.eba-emadjttn.us-east-2.elasticbeanstalk.com/)
-
 ## Unit Test
 Here is the results of the Unit Test:
 | Metric | Result |
