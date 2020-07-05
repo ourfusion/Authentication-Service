@@ -1,4 +1,4 @@
-# Authentication Service SAML 2.0
+# Authentication Service
 
 An authentication service integrating **Spring Boot** and **Spring Security SAML**
 
